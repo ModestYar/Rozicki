@@ -3,41 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROZICKI // UNIT</title>
+    <title>ROZICKI</title>
     <style>
         body {
             background-color: #000;
             color: #fff;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+            padding: 20px;
             text-align: center;
         }
-        .container { border: 1px solid #333; padding: 20px; }
-        h1 { letter-spacing: 5px; font-size: 1.5rem; }
-        p { color: #888; font-size: 0.9rem; }
-        .link {
-            margin-top: 20px;
-            display: inline-block;
+        .container {
+            max-width: 400px;
+            width: 100%;
+        }
+        /* Стиль для твоей картинки */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Сделает круглой, если надо */
+            object-fit: cover;
+            border: 2px solid #333;
+            margin-bottom: 20px;
+        }
+        h1 {
+            letter-spacing: 7px;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .description {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+        .btn {
+            display: block;
+            margin-bottom: 15px;
             color: #fff;
             text-decoration: none;
             border: 1px solid #fff;
-            padding: 10px 20px;
+            padding: 15px;
             transition: 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
         }
-        .link:hover { background: #fff; color: #000; }
+        .btn:hover {
+            background: #fff;
+            color: #000;
+        }
+        .ozon {
+            border-color: #005bff; /* Синий цвет Озона для акцента */
+            color: #005bff;
+        }
+        .ozon:hover {
+            background: #005bff;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>ROZICKI // UNIT</h1>
-        <p>ИНДИВИДУАЛЬНЫЙ ДИЗАЙН И ГРАВИРОВКА</p>
-        <p>Вы держите в руках часть коллекции «ВЗГЛЯД»</p>
-        <a href="https://t.me/ТВОЙ_ТГ" class="link">СВЯЗАТЬСЯ В ТГ</a>
+        <img src="logo.jpg" alt="ROZICKI" class="profile-img">
+        
+        <h1>ROZICKI</h1>
+        <div class="description">
+            ИНДИВИДУАЛЬНЫЙ ДИЗАЙН<br>
+            АВТОРСКАЯ ГРАВИРОВКА
+        </div>
+
+        <a href="https://www.ozon.ru/seller/ТВОЙ_АЙДИ" class="btn ozon">МАГАЗИН НА OZON</a>
+        <a href="https://t.me/ТВОЙ_НИК" class="btn">СВЯЗАТЬСЯ В TELEGRAM</a>
+        
+        <p style="font-size: 0.7rem; color: #444; margin-top: 50px;">HANDCRAFTED IN RUSSIA</p>
     </div>
 </body>
 </html>
